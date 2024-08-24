@@ -6,8 +6,11 @@
 
 body{
   color:white;
+  height:100vh;
 }
-
+html{
+  height:-webkit-fill-available;
+}
 
 @layer utilities {
   .text-balance {
