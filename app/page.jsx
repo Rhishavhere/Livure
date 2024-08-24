@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export default function IntroPage() {
   return (
-    <div className="overflow-hidden">
+    <>
 
       <div className="w-10 h-10 bg-white absolute rounded-full -right-5 top-4"></div>
       <div className="w-6 h-6 bg-green-200 absolute rounded-full left-10 top-28"></div>
@@ -48,10 +48,10 @@ export default function IntroPage() {
         animate={{scale:1,rotate:0}}
         transition={{duration:0.8}}
         
-        className="bg-white w-44 h-44 rounded-full mt-10 relative -left-10 -bottom-8">
+        className="bg-white w-44 h-44 rounded-full mt-10 relative -left-8 -bottom-12">
         <Image src="right.svg" width={50} height={50} className="absolute left-16 top-8 "></Image>
       </motion.div>
       </Link>
-    </div>
+    </>
   )
 }
