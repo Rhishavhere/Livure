@@ -52,7 +52,7 @@ export default function IntroPage() {
         animate={{scale:1,rotate:0}}
         transition={{duration:0.8}}
         
-        className="bg-white w-44 h-44 rounded-full mt-10 absolute -left-8 -bottom-12">
+        className="bg-white w-44 h-44 rounded-full mt-10 fixed -bottom-16 -left-10">
         <Link href="/register"> 
         <Image src="right.svg" width={50} height={50} className="absolute left-16 top-12 "></Image>
         </Link>
