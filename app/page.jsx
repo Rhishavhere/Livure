@@ -4,15 +4,18 @@ import { motion } from "framer-motion"
 import Link from "next/link"
 
 import { useSession, signIn } from "next-auth/react"
-import { useRouter } from "next/router"
+import { redirect } from "next/navigation";
 
 export default function RegisterPage(){
 
-  const {data: session, status} = useSession()
-  const router = useRouter()
+  const {data: session} = useSession()
 
-  const GoogleSignIn = async()=>{
-    await signIn("google",{callbackUrl:"/app/home"})
+  if (session) {
+		redirect("/home");
+	}
+
+  const GoogleSignIn = async() => {
+    await signIn("google", { callbackUrl: "/home" })
   }
 
 
