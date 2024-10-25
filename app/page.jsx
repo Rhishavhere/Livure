@@ -12,6 +12,7 @@ export default function RegisterPage() {
       <div className="w-6 h-6 bg-green-200 absolute rounded-full left-10 top-28"></div>
       <div className="w-3 h-3 bg-red-200 absolute rounded-full left-36 top-72"></div>
       <div className="w-8 h-8 bg-blue-300 absolute rounded-full bottom-20 right-48"></div>
+      <div className="w-96 h-72 bg-white/40 absolute rounded-full -z-10 bottom-28 right-48"></div>
 
       <div className="mb-4 w-2 h-2"></div>
       <div className="flex items-center bg-white/30 w-max p-2 rounded-xl gap-4 m-4">
@@ -28,7 +29,7 @@ export default function RegisterPage() {
           <p className="text-4xl font-outfit mt-24 m-4">
             Get Started Below</p>
           <p className="text-2xl font-outfit mt-4  text-white/40">
-            Livure is safe and secure.</p>
+            careBear is safe and secure.</p>
         </motion.div>
 
         <Link href="/home">

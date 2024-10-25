@@ -1,9 +1,9 @@
-
-
 import "./globals.css";
 
+import Providers from "./provider";
+
 export const metadata = {
-  title: "Livure",
+  title: "careBear",
   description: "Your Everyday Health App",
 };
 
@@ -18,7 +18,11 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-violet-600 overflow-x-hidden">{children}</body>
+      <body className="bg-orange-900/90 overflow-x-hidden">
+      <Providers>
+        {children}
+      </Providers>
+      </body>
     </html>
   );
 }
