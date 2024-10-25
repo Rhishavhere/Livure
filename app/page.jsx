@@ -2,9 +2,20 @@
 
 import { motion } from "framer-motion"
 import Link from "next/link"
-import Image from "next/image"
 
-export default function RegisterPage() {
+import { useSession, signIn } from "next-auth/react"
+import { useRouter } from "next/router"
+
+export default function RegisterPage(){
+
+  const {data: session, status} = useSession()
+  const router = useRouter()
+
+  const GoogleSignIn = async()=>{
+    await signIn("google",{callbackUrl:"/app/home"})
+  }
+
+
   return (
     <>
 
@@ -37,6 +48,7 @@ export default function RegisterPage() {
           initial={{ x: 10, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1 }}
+          onClick={GoogleSignIn}
           className="mt-20 bg-white text-black font-outfit text-xl p-2 pl-4 pr-4 rounded-2xl">
           Sign In with Google</motion.button>
         </Link>
