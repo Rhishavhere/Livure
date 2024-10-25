@@ -18,7 +18,7 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-violet-600 overflow-hidden">{children}</body>
+      <body className="bg-violet-600 overflow-x-hidden">{children}</body>
     </html>
   );
 }
