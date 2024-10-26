@@ -12,18 +12,27 @@ export default function HomePage(){
   }
   
   return(
-    <div className="flex justify-center items-center flex-col">
-    <h1 className="font-outfit mt-40 text-5xl">Home Page</h1>
-    <h1 className="font-outfit mt-4 text-xl text-white/50">Welcome {session?.user?.name}</h1>
-    
-    <button 
-        onClick={() => signOut({ callbackUrl: "/" })}
-        className="mt-8 bg-white/20 hover:bg-white/30 transition-colors text-white font-outfit 
-                 text-lg px-6 py-2 rounded-xl"
-      >
-        Sign Out
-      </button>
-    
+    <>
+
+    <div className="flex items-center justify-between bg-white/10 rounded-xl p-2 pl-4 pr-4">
+      <div>
+        <p className="font-outfit text-sm">Welcome</p>
+        <p className="font-poppins text-xl">{session?.user?.name}</p>
+      </div>
+      <div className="w-20 h-10 rounded-full bg-white border-orange-200 border-4"></div>
     </div>
+
+
+
+    <button 
+      onClick={() => signOut({ callbackUrl: "/" })}
+      className="mt-8 bg-white/20 hover:bg-white/30 transition-colors text-white font-outfit 
+      text-lg px-6 py-2 rounded-xl
+      absolute bottom-2"
+      >
+      Sign Out
+    </button>
+        
+    </>
   )
 }

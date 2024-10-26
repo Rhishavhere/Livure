@@ -18,7 +18,7 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-orange-900/90 overflow-x-hidden">
+      <body className="bg-orange-800/90 overflow-x-hidden">
       <Providers>
         {children}
       </Providers>

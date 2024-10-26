@@ -40,8 +40,11 @@ export default function RegisterPage(){
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <p className="text-4xl font-outfit mt-24 m-4">
-            Get Started Below</p>
+          <p className="text-xl font-outfit mt-24 mr-24">
+            Welcome to</p>
+            <p className="text-6xl font-poppins text-white/60">
+              <span className="italic">care</span>Bear
+            </p>
           <p className="text-2xl font-outfit mt-4  text-white/40">
             careBear is safe and secure.</p>
         </motion.div>
